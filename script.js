@@ -1,13 +1,13 @@
-var userName = document.querySelector('#username').value;
-var submitButton = document.getElementById('submitbtn')
+let submitButton = document.getElementById('submitbtn')
 let api = document.querySelector('#api');
 let api1 = document.querySelector('#api1');
 const myImg = document.getElementById('dogimg');
-// userName = 'omar';
+
 
 submitButton.addEventListener("click", getAllInfo);
 
 setDogImage();
+
 async function setDogImage() {
     let getDogImage = await fetch('https://dog.ceo/api/breeds/image/random');
     let dogImg = await getDogImage.json();
