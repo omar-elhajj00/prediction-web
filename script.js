@@ -25,7 +25,8 @@ async function getAllInfo() {
 
     let getNationality = await fetch(`https://api.nationalize.io/?name=${userName}`);
     let nationalityData = await getNationality.json();
-    nationality.innerHTML = nationalityData.country[1];
+    nationality.innerHTML = `${ nationalityData.country[0].country_id } or ${ nationalityData.country[1].country_id }`;
+    console.log(nationalityData.country[0].country_id);
 
     let getAge = await fetch(`https://api.agify.io/?name=${userName}`);
     let ageData = await getAge.json();
