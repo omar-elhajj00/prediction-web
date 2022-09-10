@@ -8,7 +8,7 @@ const myImg = document.getElementById('dogimg');
 
 submitButton.addEventListener("click", getAllInfo);
 
-//call the function that request the image apiapi
+//call the function that request the image api
 setDogImage();
 
 //Dog's image api
@@ -23,7 +23,7 @@ async function setDogImage() {
 async function getAllInfo() {
     //get the username value
     const userName = document.querySelector('#username').value; 
-    
+
     // gender api request
     let getGender = await fetch(`https://api.genderize.io?name=${userName}`); //send the gender api  
     let genderData = await getGender.json(); //receive the response and implement it in  json object
