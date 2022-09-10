@@ -10,7 +10,7 @@
 body {
     background: linear-gradient(to right, #ffffff, #ffe4e5);
 }
-
+/*main form*/
 .prediction-form{
     margin: 3rem auto;
     width:30rem;
@@ -21,26 +21,23 @@ body {
     border-radius: .5rem;
     align-items: center;
     box-shadow: 0 .7rem .7rem rgba(0, 0, 0, .3)
-    
 }
-
+/* dog's random image */
 .prediction-form img{
     max-width: 20rem;
     height: auto;
     align-self: center;
     margin-bottom: 3rem;
 }
-
+/* input and button form */
 .prediction-form .form{
     padding: 1rem;
     max-width:25rem;
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(219, 204, 184); */
-    /* box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3); */
     border-radius: .3rem;
-
 }
+
 .prediction-form .form input {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -68,15 +65,14 @@ body {
     transition: .2s;
     cursor: pointer;
 }
-
+/* results display division */
 .prediction-form .results{
     margin-top: 1rem;
     padding: 1rem;
-    /* background-color: #d3eaf2 ; */
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
     border-radius: .3rem;
-
 }
+
 .prediction-form .results p{
     font-size: 1.3rem;
     margin-bottom: .3rem;
