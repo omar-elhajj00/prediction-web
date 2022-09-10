@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&family=Tajawal:wght@300;400;700&display=swap');
+
 *{
     padding: 0;
     margin:0;
@@ -40,23 +41,25 @@ body {
 
 }
 .prediction-form .form input {
+    margin-top: 1rem;
     margin-bottom: 1rem;
     height: 2rem;
     width: 12rem;
     font-size: 1rem;
     padding: .3rem;
     border-radius: .2rem;
+    
 }
 
 .prediction-form .form button{
-    width:8rem;
+    width:7rem;
     background-color: #0b57d0;
     color:white;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: .3rem;
     border: none ;
     border-radius: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     align-self: center;
 }    
 .prediction-form .form button:hover {
