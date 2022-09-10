@@ -1,0 +1,43 @@
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+body {
+    background: #e5e5e5;
+}
+
+.prediction-form{
+    margin: 4rem auto;
+    width:30rem;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    align-items: center;
+}
+
+.prediction-form img{
+    max-width: 20rem;
+    height: auto;
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+.prediction-form .form{
+    padding: 1rem;
+    max-width:25rem;
+    height:3rem;
+    display: flex;
+    flex-direction: colum;
+    background-color: rgb(219, 204, 184);
+
+}
+.prediction-form .results{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #d3eaf2 ;
+
+}

@@ -1,6 +1,7 @@
 let submitButton = document.getElementById('submitbtn')
-let api = document.querySelector('#api');
-let api1 = document.querySelector('#api1');
+let gender = document.querySelector('#gender');
+let nationality = document.querySelector('#nationality');
+let age = document.querySelector('#age');
 const myImg = document.getElementById('dogimg');
 
 
@@ -16,19 +17,19 @@ async function setDogImage() {
 }
 
 async function getAllInfo() {
+    
     const userName = document.querySelector('#username').value;
     let getGender = await fetch(`https://api.genderize.io?name=${userName}`);
     let genderData = await getGender.json();
-    console.log(genderData.gender);
+    gender.innerHTML = genderData.gender;
 
     let getNationality = await fetch(`https://api.nationalize.io/?name=${userName}`);
     let nationalityData = await getNationality.json();
-    console.log(nationalityData.country[1]);
-
+    nationality.innerHTML = nationalityData.country[1];
 
     let getAge = await fetch(`https://api.agify.io/?name=${userName}`);
     let ageData = await getAge.json();
-    console.log(ageData.age);
+    age.innerHTML = ageData.age;
 
     // let getNationality = await fetch(' https://api.nationalize.io/?name=mohamad');
 
