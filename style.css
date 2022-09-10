@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&family=Tajawal:wght@300;400;700&display=swap');
 *{
     padding: 0;
     margin:0;
@@ -32,14 +32,39 @@ body {
 .prediction-form .form{
     padding: 1rem;
     max-width:25rem;
-    height:3rem;
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     /* background-color: rgb(219, 204, 184); */
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
     border-radius: .3rem;
 
 }
+.prediction-form .form input {
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 12rem;
+    font-size: 1rem;
+    padding: .3rem;
+    border-radius: .2rem;
+}
+
+.prediction-form .form button{
+    width:8rem;
+    background-color: #0b57d0;
+    color:white;
+    font-size: 1.3rem;
+    padding: .3rem;
+    border: none ;
+    border-radius: 1rem;
+    font-weight: 500;
+    align-self: center;
+}    
+.prediction-form .form button:hover {
+    background-color: #15499c;
+    transition: .2s;
+    cursor: pointer;
+}
+
 .prediction-form .results{
     margin-top: 1rem;
     padding: 1rem;
@@ -49,6 +74,6 @@ body {
 
 }
 .prediction-form .results p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: .3rem;
 }
