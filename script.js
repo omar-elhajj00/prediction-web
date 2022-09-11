@@ -20,10 +20,11 @@ async function setDogImage() {
 }
 
 //function to be called when submit button clicked 
-async function getAllInfo() {
+async function getAllInfo(e) {
+    e.preventDefault();
     //get the username value
-    const userName = document.querySelector('#username').value; 
-
+    const userName = document.querySelector('#username').value;
+    
     // gender api request
     let getGender = await fetch(`https://api.genderize.io?name=${userName}`); //send the gender api  
     let genderData = await getGender.json(); //receive the response and implement it in  json object

@@ -8,12 +8,16 @@
 }
 
 body {
-    background: linear-gradient(to right, #ffffff, #ffe4e5);
+    background:#fff4f4;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
 }
 /*main form*/
 .prediction-form{
     margin: 3rem auto;
-    width:30rem;
+    max-width:30rem;
     background: linear-gradient(to right, #ebebeb, #cacaca);
     padding: 2rem;
     display: flex;
