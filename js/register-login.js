@@ -12,6 +12,8 @@ function store(){
     }else{
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
+        name.value = "";
+        pw.value = "";
         alert('Your account has been created');
     }
 }
