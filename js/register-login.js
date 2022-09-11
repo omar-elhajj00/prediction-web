@@ -1,5 +1,6 @@
 function store(){
 
+    // define the variables
     var name = document.getElementById('name');
     var pw = document.getElementById('pw');
 
@@ -9,7 +10,8 @@ function store(){
     }else if(pw.value.length == 0){
         alert('Please fill in password');
 
-    }else{
+    } else {
+        // save the Credentials in local storage
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
         name.value = "";
@@ -20,19 +22,18 @@ function store(){
 
 //checking
 function check() {
-    // e.preventDefault();
+    // get the stored values
     var storedName = localStorage.getItem('name');
     var storedPw = localStorage.getItem('pw');
-
+    // define values
     var userName = document.getElementById('userName');
     var userPw = document.getElementById('userPw');
-    // var userRemember = document.getElementById("rememberMe");
 
-    if(userName.value == storedName && userPw.value == storedPw){
-        console.log('zebata');
-        // window.location.href = '../index.html';
+    if (userName.value == storedName && userPw.value == storedPw) {
+        //redirect to the prediction page
         location.replace("../index.html");
-    }else{
+    } else {
+        //error
         alert('Error on login');
     }
 }

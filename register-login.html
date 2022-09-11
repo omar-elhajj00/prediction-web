@@ -8,27 +8,32 @@
     <title>Login Page</title>
 </head>
 <body>
+
+    <!-- register form starts-->
     <div class="login">
+
         <div class="form">
 
             <h1>REGISTER</h1>
 
-            <label for="name">Email</label>
+            <label for="name">UserName</label>
             <input type="text" id="name" placeholder="Username" required>
 
             <label for="pw">Password</label>
             <input type="password" id= "pw" placeholder="Password" required>
 
             <input id="rgstr_btn" type="submit" value="Register" onclick="store()">
-            
+
         </div>      
     </div>
+    <!-- register form end -->
 
+    <!-- login form starts-->
     <div class="login">
         <div class="form">
             <h1>SIGN IN</h1>
 
-            <label for="userName">Email</label>
+            <label for="userName">UserName</label>
             <input type="text" id="userName" placeholder="Username" required>
 
             <label for="userPw">Password</label>
@@ -37,10 +42,8 @@
             <input id= "login_btn" type="submit" value="Login" onclick="check()">
         </div>      
     </div>
-
+    <!-- login form ends -->
 
     <script src="js/register-login.js"></script>
-
-    
 </body>
 </html>
